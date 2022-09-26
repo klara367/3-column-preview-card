@@ -20,12 +20,12 @@ Users should be able to:
 
 ### Screenshot
 
-![]()
-![]()
+![](./design-screenshot/desktop-design.png)
+![](./design-screenshot/mobile-design.png)
 
 ### Links
 
-- Live Site URL: []()
+- Live Site URL: [https://klara367.github.io/3-column-preview-card/](https://klara367.github.io/3-column-preview-card/)
 
 ### Built with
 
