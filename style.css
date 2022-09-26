@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+/*Layout-structure*/
+
+body {
+    background-color: var(--very-light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card-components {
+    margin: 1.5rem;
+}
+
+.component {
+    padding: 3rem;
+}
+
+.sedan-component {
+    background-color: var(--bright-orange);
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+.suv-component {
+    background-color: var(--dark-cyan);
+}
+
+.luxury-component {
+    background-color: var(--very-dark-cyan);
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+
+}
+
+/*Text-styling*/
+
+h2 {
+    color: var(--very-light-gray);
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    margin-block: 1.75rem;
+    font-size: 2.5rem;
+    text-transform:uppercase;
+}
+
+p {
+    color: var(--transparent-white);
+    font-size: 0.9375rem;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    margin-bottom: 5rem;
+    line-height: 1.75;
+}
+
+/*Button-styling*/
+
+a {
+    font-size: 0.9375rem;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    border: 2px solid var(--very-light-gray);
+    border-radius: 3rem;
+    padding-block: 0.75rem;
+    padding-inline: 1.75rem;
+    background-color: var(--very-light-gray);
+    display: inline-block;
+}
+
+.sedan-component a {
+    color: var(--bright-orange);
+}
+.suv-component a {
+    color: var(--dark-cyan);
+}
+
+.luxury-component a {
+    color: var(--very-dark-cyan);
+}
+
+.hover-btn:hover,
+.hover-btn:active {
+    color: var(--very-light-gray);
+    background-color: transparent;
+}
+
+/*Desktop-design*/
+
+@media only screen and (min-width:768px){
+    main {
+        display: grid;
+        max-width: 57em;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .sedan-component {
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+        border-top-right-radius: 0;
+    }
+
+    .luxury-component {
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        border-bottom-left-radius: 0;
+    
+    }
+}
